@@ -1,0 +1,15 @@
+﻿@model BlogProject.Models.Author
+@{
+    ViewBag.Title = "Show";
+}
+
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Author/List">Back to Authors</a>
+        <a class="dellink" href="/Author/DeleteConfirm/@Model.AuthorId">Delete</a>
+    </nav>
+    <h2>@Model.AuthorFname @Model.AuthorLname</h2>
+    <div>Joined On: @Model.AuthorJoinDate</div>
+    <p>@Model.AuthorBio</p>
+</div>
